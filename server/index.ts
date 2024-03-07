@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+import { Error } from 'mongoose';
 
 const cors = require("cors");
 const router = require("./Routes/router");
@@ -17,7 +18,7 @@ app.use(express.json());
 app.use(router);
 
 // Start the server:
-app.listen(SERVER_PORT, (err) => {
+app.listen(SERVER_PORT, (err: Error) => {
   if (err) {
     console.log(`Sorry, something went wrong... ${err}`);
   } else {
