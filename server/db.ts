@@ -8,4 +8,4 @@ mongoose
   .then(() => console.log("Reciplease database connected"))
   .catch((err: Error) => console.error(`Database failed to connect: ${err}`));
 
-module.exports = mongoose;
+  export default mongoose;

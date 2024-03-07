@@ -23,4 +23,4 @@ router.all("*", (req: Request, res: Response) => {
   res.status(404).send("Sorry, not found...");
 });
 
-module.exports = router;
+export default router;
