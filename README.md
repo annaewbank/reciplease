@@ -11,7 +11,7 @@ We've all encountered the frustration of having recipes scattered across website
 ### Tech Stack
 
 #### Back-end:
-- Node.js
+- Node.js (version 14+ recommended)
 - Express
 - MongoDB
 - Mongoose
