@@ -6,9 +6,24 @@
 
 We've all encountered the frustration of having recipes scattered across websites, cookbooks, magazines and handwritten notes. Reciplease aims to solve this problem by providing a central hub for all of your recipes, regardless of their origin. This allows you to easily organise, access, and personalise your favourite culinary creations, all in one convenient place.
 
-### Technologies
+---
 
-Choosing the right tools was important to create this app within the one week deadline. Figma helped me to design the app's interface, while Node.js, Express, MongoDB and Mongoose combined to build the robust backend. React brought the frontend to life using Zustand as a global state manager, Cloudinary to provide a seamless solution for image storage and React-Toastify to add helpful pop-up notifications throughout the app.
+### Tech Stack
+
+#### Back-end:
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+
+#### Front-end:
+- Figma
+- React + Vite
+- Zustand
+- Cloudinary
+- React-Toastify
+
+---
 
 ### Features
 
@@ -18,52 +33,70 @@ Choosing the right tools was important to create this app within the one week de
 - The ability to filter recipes based on their category, if they are a favourite or through a search query
 - Each recipe on the dashboard links to its own recipe detail page where users can see the details, ingredients and method
 
-I have also implemented responsiveness across a range of devices and dark mode:
+Reciplease is responsive across a range of devices and has both a light and dark mode:
 
 <img src="./readme-assets/Devices.png" width="750" style="display: block; margin: 0 auto;">
 
-### Challenges
-
-Mastering atomic commits, preventing data mutation in React, and diving into a new state manager, Zustand, all presented their own challenges.
+---
 
 ### Future developments
-
-I plan to enable:
 
 - Recipe editing
 - Smoother carousel navigation on the dashboard
 - A robust authentication system using JWT
 - The integration of the Edamam API’s recipe search to provide users with recipes based off of their available ingredients
+- Make the app a social platform where users can share their recipes with other users
 
-A longer-term goal is to make the app a social platform where users can share their recipes with other users.
+---
 
 ### **How to Install and Run the Project**
 
 **Prerequisites:**
 
-- Ensure you have MongoDB installed and running on your system.
+- Except for the regular suspects (git, Node and npm), ensure you have MongoDB installed and running on your system.
 
 **Instructions:**
 
 1. Fork the repositiory
 
 2. Clone the repository in your chosen destination:
-   `git clone <repository_url>`
 
-3. Install dependencies:
+```bash
+git clone <repository_url>
+```
+
+4. Install dependencies:
    - Navigate to the *server* folder and run:
-     `npm install`
+
+```bash
+npm install
+```
+
    - Navigate to the *client* folder and run:
-     `npm install`
-4. Start the server:
+```bash
+npm install
+```
+
+5. Start the server:
    - Open a terminal window, navigate to the *server* folder and run:
-     `npm start`
-5. Start the client:
+```bash
+npm start
+```
+
+6. Start the client:
 
    - Open another terminal window, navigate to the *client* folder and run:
-     `npm run dev`
+```bash
+npm run dev
+```
    - Open the link in your browser to display the Reciplease app (default link: `http://localhost:5173/`)
 
    **Note:** You may need to adjust the port numbers if you have other applications using port 3000 (the server’s default port) or port 5173 (the frontend’s default port).
 
-6. Create an account to begin using Reciplease
+7. Create an account to begin using Reciplease
+
+---
+
+### Developers
+
+* Anna Ewbank: [GitHub](https://github.com/annaewbank) | [LinkedIn](https://www.linkedin.com/in/annaewbank/)
